@@ -1,0 +1,14 @@
+{
+  "name": "socketio-chat",
+  "version": "1.0.0",
+  "description": "Live chat powered by vue and socket.io",
+  "main": "index.js",
+  "repository": "https://github.com/SaphirePI/socketio-chat.git",
+  "author": "X-49",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socket.io Chat</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- Очередь подключения влияет на приоритет классовых стилей -->
+
+</head>
+
+<body>
+    <div id="app" class="page container">
+        <div v-if="!user.connected" class="welcome col-md-4 center">
+            <div class="form">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Ваш никнейм</label>
+                        <input type="text" class="form-control" id="name" aria-describedby="name">
+                    </div>
+                    <button type="submit"
+                        class="btn btn-primary">{{!user.connected === true ? 'Войти' : 'Входим..'}}</button>
+                </form>
+            </div>
+        </div>
+
+        <div v-else class="center col-md-8 chat" style="padding: 0">
+            <nav class="navbar navbar-dark bg-primary">
+                SocketIO CHAT
+            </nav>
+            <div class="messages">
+            </div>
+            <div class="input-group" style="border-radius: 0; background-color: #fff;">
+                <input v-on:keyup.enter="send_message" id="send" type="text" class="form-control" placeholder="Ваше сообщение" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon2" @click="send_message">Отправить</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Script Area -->
+    <script src="https://unpkg.com/vue"></script>
+    <script src="./socket.io/socket.io.js"></script>
+    <script src="./js/application.js"></script>
+
+</body>
+
+</html>
