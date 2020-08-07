@@ -39,6 +39,12 @@ var application = new Vue({
             <b>${username}<b><span style="margin-left: 1px;"> подключился.</span>
         </div>`)
         })
+
+        this.io.on('leave', username => {
+            $(".messages").append(`<div class="media message">
+            <b>${username}<b><span style="margin-left: 1px;"> покидает чат.</span>
+        </div>`)
+        })
     }
 })
 

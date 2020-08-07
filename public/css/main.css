@@ -24,6 +24,8 @@ body {
 }
 .messages {
     min-height: 50vh;
+    max-height: 80vh;
+    overflow-y: scroll; /* Because content will be out of div*/
 }
 .media-body {
     background: rgba(1, 112, 231, 0.5);

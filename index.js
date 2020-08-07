@@ -7,9 +7,8 @@ app.use(require('express').static('public'));
 
 io.on('connection', socket => {
     console.log('A new client connected')
-    
     socket.on('chat', message => {
-        io.emit('chat', {
+        if(message.length) io.emit('chat', {
             message,
             username: socket.username
         })
@@ -18,6 +17,10 @@ io.on('connection', socket => {
     socket.on('join', name => {
         io.emit('join',name)
         socket.username = name;
+    })
+
+    socket.on('disconnect', () => {
+        if(socket.username) io.emit('leave', socket.username)
     })
 });
 
