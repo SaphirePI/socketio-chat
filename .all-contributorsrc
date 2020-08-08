@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "vladciphersky",
+      "name": "Vlad | cipherskyinc",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/32297717?v=4",
+      "profile": "https://sqdsh.top",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "socketio-chat",
+  "projectOwner": "SaphirePI",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
