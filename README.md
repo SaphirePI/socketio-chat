@@ -1,4 +1,4 @@
-# socketio-chat
+## Socket.IO Chat
 Live chat on vue and socket.io
 
 ### Внимание
