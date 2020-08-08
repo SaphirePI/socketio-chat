@@ -1,4 +1,7 @@
 ## Socket.IO Chat
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 Live chat on vue and socket.io
 
 ### Внимание
@@ -11,3 +14,22 @@ Live chat on vue and socket.io
 ![img](https://nefelit.design/23e991deaacc3d1d.png)
 
 ![img](https://nefelit.design/d8373c83e260bba0.png)
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://sqdsh.top"><img src="https://avatars1.githubusercontent.com/u/32297717?v=4" width="100px;" alt=""/><br /><sub><b>Vlad &#124; cipherskyinc</b></sub></a><br /><a href="https://github.com/SaphirePI/socketio-chat/commits?author=vladciphersky" title="Code">💻</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
