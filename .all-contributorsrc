@@ -13,6 +13,16 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "SaphirePI",
+      "name": "X-49",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/40152105?v=4",
+      "profile": "https://xeval.dev",
+      "contributions": [
+        "code",
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 7,
